@@ -6,13 +6,16 @@
    - CPU
      - [Theadring](#theadring)
      - [Multiprocessing](#multiprocessing)
+     - [PyTorch (Multiprocessing)](#pytorch-(multiprocessing))
      - Numba
    - GPU
+     - [PyTorch (CUDA)](#pytorch-(cuda))
      - PyCuda
      - PyOpenCL
-     - PyTorch
      - Dask
    
+
+<h1 align="center">CPU</h1>
 
 ## Theadring
 
@@ -58,7 +61,7 @@ process1.join()  # Wait to terminate
 process2.join()  # Wait to terminate
 ```
 
-### Multiprocessing pool
+#### Multiprocessing pool
 
 ```python
 import multiprocessing
@@ -69,6 +72,50 @@ def f(x):
 cores = 4
 pool = multiprocessing.Pool(cores)
 pool.map(f, [1, 2, 3])
+```
+
+## PyTorch (Multiprocessing)
+
+PyTorch multiprocessing is a wrapper around the native multiprocessing module. It supports the exact same operations, but extends it, so that all tensors sent through a multiprocessing.Queue
+
+```python
+import torch.multiprocessing as mp
+
+if __name__ == '__main__':
+    num_processes = 4
+    processes     = []
+    for rank in range(num_processes):
+        p = mp.Process(target=func, args=(x))
+        p.start()
+        processes.append(p)
+    for p in processes:
+        p.join()
+```
+
+
+<h1 align="center">GPU</h1>
+
+
+## PyTorch (CUDA)
+```python
+import torch
+
+print("GPU available:", torch.cuda.is_available())
+print("GPU name:     ", torch.cuda.get_device_name(0))
+```
+
+#### Usage
+```python
+tensor = torch.FloatTensor([1., 2.]).cuda()
+tensor = tensor.operations ...
+result = tensor.cpu()
+```
+
+#### Memory management
+```python
+torch.cuda.memory_allocated() # Memory usage by tensors
+torch.cuda.memory_cached()    # Cache memory (visible in nvidia-smi)
+torch.cuda.empty_cache()      # Free cache memory
 ```
 
 
