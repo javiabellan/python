@@ -6,10 +6,10 @@
    - CPU
      - [Theadring](#theadring)
      - [Multiprocessing](#multiprocessing)
-     - [PyTorch (Multiprocessing)](#pytorch-(multiprocessing))
+     - [PyTorch (Multiprocessing)](#pytorch-multiprocessing)
      - Numba
    - GPU
-     - [PyTorch (CUDA)](#pytorch-(cuda))
+     - [PyTorch (CUDA)](#pytorch-cuda)
      - PyCuda
      - PyOpenCL
      - Dask
