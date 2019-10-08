@@ -3,11 +3,15 @@
 ### Index
 
 -  Parallelization ⏩
-   - [Theadring](#theadring)
-   - [Multiprocessing](#multiprocessing)
-   - Numba
-   - PyTorch
-   - Dask
+   - CPU
+     - [Theadring](#theadring)
+     - [Multiprocessing](#multiprocessing)
+     - Numba
+   - GPU
+     - PyCuda
+     - PyOpenCL
+     - PyTorch
+     - Dask
    
 
 ## Theadring
@@ -20,24 +24,18 @@ Theadring is usful in:
 
 ```python
 import threading
-import random
-from functools import reduce
 
+def func(x):
+    return x*x
 
-def func(number):
-    random_list = random.sample(range(1000000), number)
-    return reduce(lambda x, y: x*y, random_list)
+thread1 = threading.Thread(target=func, args=(4))
+thread2 = threading.Thread(target=func, args=(5))
 
-    
-number = 50000
-thread1 = threading.Thread(target=func, args=(number,))
-thread2 = threading.Thread(target=func, args=(number,))
+thread1.start() # Starts the thread asynchronously
+thread2.start() # Starts the thread asynchronously
 
-thread1.start() # starts the thread asynchronously
-thread2.start() # starts the thread asynchronously
-
-thread1.join()  # wait to terminate
-thread2.join()  # wait to terminate
+thread1.join()  # Wait to terminate
+thread2.join()  # Wait to terminate
 ```
 
 ## Multiprocessing
@@ -46,25 +44,33 @@ Multiprocessing outshines threading in cases where the program is CPU intensive 
 
 ```python
 import multiprocessing
-import random
-from functools import reduce
 
+def func(x):
+    return x*x
 
-def func(number):
-    random_list = random.sample(range(1000000), number)
-    return reduce(lambda x, y: x*y, random_list)
+process1 = multiprocessing.Process(target=func, args=(4))
+process2 = multiprocessing.Process(target=func, args=(5))
 
-    
-number = 50000
-process1 = multiprocessing.Process(target=func, args=(number,))
-process2 = multiprocessing.Process(target=func, args=(number,))
+process1.start() # Start the process
+process2.start() # Start the process
 
-process1.start()
-process2.start()
-
-process1.join()
-process2.join()
+process1.join()  # Wait to terminate
+process2.join()  # Wait to terminate
 ```
+
+### Multiprocessing pool
+
+```python
+import multiprocessing
+
+def f(x):
+    return x*x
+
+cores = 4
+pool = multiprocessing.Pool(cores)
+pool.map(f, [1, 2, 3])
+```
+
 
 ## Resources
 
