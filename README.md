@@ -1,25 +1,26 @@
-<h1 align="center">Python</h1>
+<h1 align="center">Python Parallelization ⏩</h1>
 
 ### Index
 
--  Parallelization ⏩
-   - CPU
-     - [Python Threading](#threading)
-     - [Python Multiprocessing](#multiprocessing)
-     - [PyTorch Multiprocessing](#pytorch-multiprocessing)
-     - [Numba JIT](#numba)
-   - GPU
-     - [PyTorch CUDA](#pytorch-cuda)
-     - [Numba CUDA](#numba-cuda)
-     - [CuPy](#cupy): GPU matrix library similar to NumPy
-     - PyCuda
-     - PyOpenCL
-     - Dask
-     - RAPIDS: Open GPU Data Science
-       - cuDF: GPU dataFrame library similar to Pandas
-       - cuML: GPU machine learning similar to Scikit-learn
-       - cuGraph: GPU graph library similar to NetworkX
-   
+[todo](https://developer.download.nvidia.com/video/gputechconf/gtc/2019/presentation/s9797-dask-extensions-and-new-developments-with-rapids.pdf)
+
+- CPU
+  - [**Python Threading**](#threading)
+  - [**Python Multiprocessing**](#multiprocessing)
+  - [**PyTorch Multiprocessing**](#pytorch-multiprocessing)
+  - [**Numba JIT**](#numba)
+- GPU
+  - [**PyTorch CUDA**](#pytorch-cuda): Numeric parallelization similar to NumPy
+  - [**Numba CUDA**](#numba-cuda): Easy parallelization
+  - **cuDF**: DataFrame parallelization similar to Pandas (by RAPIDS)
+  - **cuML**: Machine learn. parallelization similar to Scikit-learn (by RAPIDS)
+  - **cuGraph**: graph parallelization similar to NetworkX (by RAPIDS)
+  - [**CuPy**](#cupy): GPU matrix library similar to NumPy
+  - **PyCuda**
+  - **PyOpenCL**
+  - **Dask**: Distributed parallelization
+
+  
 
 <h1 align="center">CPU</h1>
 
