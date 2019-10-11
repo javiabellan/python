@@ -1,8 +1,108 @@
-<h1 align="center">Python Parallelization ⏩</h1>
+<h1 align="center">🐍 Python Packages</h1>
+
+> ### See more Python AI packages [here](https://skymind.ai/wiki/python-ai)
+
 
 ### Index
 
-[todo](https://developer.download.nvidia.com/video/gputechconf/gtc/2019/presentation/s9797-dask-extensions-and-new-developments-with-rapids.pdf)
+
+| 🐼 **Dataframe** |  📊 **Visualization** | 💡 **Machine Learning** | 🌳 **Gradient Boosting** | 🔦 **Deep Learning** |
+|:-----------------|:----------------------|:-------------------------|:-------------------------|:---------------------|
+| Pandas           | Matplotlib       ⭐   | Scikit learn    ⭐       | XGBoost                  | Pytorch = PT         |
+| Datatable   ⭐   | Seaborn               | H2O                      | LightGBM ⭐              | Tensorflow = TF      |
+| CuDF             | Plotly                | CuML                     | CatBoost                 | Fast.ai (PT)   ⭐    |
+| Dask             | Bokeh                 | Dask-ML                  |                          | Catalyst (PT)        |
+|                  |                       |                          |                          | Ignite (PT)          |
+|                  |                       |                          |                          | Keras (TF)           |
+
+Others:
+
+| 🕷️ **Web Scraping** | 🔢 **Numeric** | 🍹 **Auto ML** | ❓ **ML visual** |
+|---------------------|----------------|-----------------|------------------|
+| Beautiful Soup      | Numpy          | H2O ⭐          | ELI5             |
+| Scrapy              | Scipy          | Auto Sklearn    | Yellowbrick      |
+|                     | Statsmodels    | TPOT            | Tensorboard (DL) |
+|                     |                | MLBox           |                  |
+
+
+### Data Manipulation & Wrangling
+
+- [agate](): data analysis library with human-readable code
+- [arrow](): date & time manipulation & formatting
+- [beautifulsoup4](): Beautiful Soup, for parsing HTML, JSON & XML data
+- [engarde](): defensive data analysis
+- [jsonify](): converts .csv files to .json
+- [numexpr](): fast numerical array expression evaluator
+- [numpy](): scientific computing library
+- [pandas](): data structures & data analysis tools
+- [pandas_profiling](): generates profile reports from a pandas DataFrame
+- [pandasql](): queries pandas dataframes using SQL syntax
+- [prettytable](): easily display tabular data as ASCII table
+- [shapely](): manipulation & analysis of geometric objects
+- [tabulate](): pretty-print tabular data
+
+
+### Machine Learning & Statistics
+
+- [cvxopt](): convex optimization library
+- [emcee](): an MIT MCMC library
+- [hdbscan](): Hierarchical Density-Based Spatial Clustering of Applications with Noise
+- [keras](): high-level neural networks API
+- [lifelines](): survival analysis in Python
+- [lifetimes](): package for analyzing user behavior
+- [prophet](): procedure for forecasting time series data
+- [pymc3](): probabilistic programming & Bayesian modeling
+- [gensim](): unsupervised semantic modeling from plain text
+- [scikit-image](): image processing library
+- [scikit-learn](): tools for data mining & analysis
+- [scikits-bootstrap](): bootstrap confidence interval algorithms for scipy
+- [scipy](): for mathematics, science & engineering
+- [statsmodels](): estimate statistical models & perform statistical tests
+- [sympy](): symbolic mathematics
+- [tensorflow](): numerical computation using data flow graphs
+- [xgboost](): optimized distributed gradient boosting library
+
+
+### Visualization
+
+- [folium](): build Leaflet.js maps in Python
+- [gviz_api](): helper library for Google Visualization API
+- [igraph](): network analysis tools
+- [mapbox](): client for Mapbox web services
+- [matplotlib](): 2D plotting library
+- [patsy](): describe statistical models & build design matrices
+- [plotly](): create interactive graphics
+- [pygal](): create interactive svg charts
+- [pygraphviz](): interface for Graphviz graph layout & visualizations
+- [pyproj](): cartographic transformations & geodetic computations
+- [seaborn](): viz library to draw statistical graphics
+- [squarify](): implementation of the squarify treemap layout algorithm
+- [wordcloud](): wordcloud generator in Python
+
+
+### Everything Else
+
+- [cufflinks](): bind Plotly directly to pandas dataframes
+- [datascience](): library for introductory data science
+- [fiona](): read & write geospatial data files
+- [geopandas](): extends pandas to allow spatial operations on geometric types
+- [networkx](): create, manipulate & study networks
+- [nltk](): natural language toolkit
+- [pysal](): geospatial analysis library
+- [pyzipcode3](): query zip codes & location data
+- [requests](): allows HTTP requests
+- [scrapy](): scraping web pages
+- [six](): Python 2 & 3 compatibility library
+- [spacy](): advanced natural language processing
+- [textblob](): simple API for common NLP tasks
+- [ua_parser](): fast & reliable user agent parser
+- [urllib3](): HTTP client for python
+
+---
+
+<h1 align="center">Python Parallelization ⏩</h1>
+
+> ### [todo](https://developer.download.nvidia.com/video/gputechconf/gtc/2019/presentation/s9797-dask-extensions-and-new-developments-with-rapids.pdf)
 
 - CPU
   - [**Python Threading**](#threading)
