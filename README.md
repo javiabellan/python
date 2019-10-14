@@ -100,6 +100,36 @@ Others:
 
 ---
 
+
+
+<h1 align="center">NLP Packages</h1>
+
+
+| Packages                                         | Description                                                               | Type |
+|:------------------------------------------------:|---------------------------------------------------------------------------|------|
+| <img src="img/logo/spacy.png" height="40">       | Parse trees, execelent tokenizer (8 languages)                            | 🔤 |
+| <img src="img/logo/gensim.jpg" height="30">      | Semantic analysis, topic modeling and similarity detection.               | 🔤 |
+| <h3>NLTK</h3>                                    | Very broad NLP library. Not SotA.                                         | 🔤 |
+| <h3>SentencePiece</h3>                           | Unsupervised text tokenizer by Google                                     | 🔤 |
+| <img src="img/logo/fastai.png" height="50">      | Fast.ai NLP: ULMFiT fine-tuning                                           | 🔤 |
+| <img src="img/logo/pytorch.png" height="30">     | TorchText (Pytorch subpackage)                                            | 🔤 |
+| <img src="img/logo/fasttext.png" height="50">    | Word vector representations and sentence classification (157 languages)   | 🔤 |
+| <img src="img/logo/huggingface.png" height="50"> | pytorch-transformers: 8 pretrained Pytorch transformers                   | 🔤 |
+| <img  src="img/logo/spacy.png" height="30">+<img src="img/logo/huggingface.png" height="40"> | SpaCy + pytorch-transformers  | 🔤 |
+| <h3>fast-bert</h3>                               | Super easy library for BERT based models                                  | 🔤 |
+| <img src="img/logo/stanfordnlp.jpg" height="50"> | Pretrained models for 53 languages                                        | 🔤 |
+| <h3>PyText</h3>                                  |                                                                           | 🔤 |
+| <img src="img/logo/allennlp.png" height="20">    | An open-source NLP research library, built on PyTorch.                    | 🔤 |
+| <img src="img/logo/farm.png" height="40">        | Fast & easy NLP transfer learning for the industry.                       | 🔤 |
+| <img src="img/logo/transfernlp.jpg" height="30"> | NLP library designed for reproducible experimentation management.         | 🔤 |
+| <img src="img/logo/flair.png" height="40">       | A very simple framework for state-of-the-art NLP.                         | 🔤 |
+| <img src="img/logo/nlparchitect.png" height="30">| SotA NLP deep learning topologies and techniques.                         | 🔤 |
+| <img src="img/logo/finetune.png" height="30">    | Scikit-learn style model finetuning for NLP.                              | 🔤 |
+
+
+
+---
+
 <h1 align="center">Python Parallelization ⏩</h1>
 
 > ### [todo](https://developer.download.nvidia.com/video/gputechconf/gtc/2019/presentation/s9797-dask-extensions-and-new-developments-with-rapids.pdf)
